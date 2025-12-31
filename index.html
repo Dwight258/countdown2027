@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カウントダウンタイマー</title>
+    <link rel="Stylesheet" href="Styles.css">
+</head>
+<body>
+    <video class="background-video" id="background-video" autoplay loop muted>
+        <source src="videoplayback.mp4" type="video/mp4">
+        お使いのブラウザは動画タグに対応していません。
+    </video>
+
+    <div class="countdown" id="countdown-container">
+        <h1><big><big><big><big>2026年まであと</big></big></big></big></h1>
+        <div class="time" id="countdown"><big>0日 0時間 0分 0秒</big></div>
+    </div>
+
+    <div class="fade-out" id="fade-out"></div>
+    <div class="message" id="message-1"><font size="7">明けましておめでとうございます</font></div>
+    <div class="message" id="message-2"><font size="7">今年もよろしくお願いします</font></div>
+    <audio id="new-year-audio" loop>
+        <source src="D0002110014_00000_A_001.m4a" type="audio/mpeg">
+        お使いのブラウザはオーディオタグに対応していません。
+    </audio>
+    <script src="index.js"></script>
+</body>
+</html>

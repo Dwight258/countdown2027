@@ -1,0 +1,62 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.8) blur(3px);
+            transition: opacity 2s;
+        }
+        .countdown {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            transition: opacity 2s;
+        }
+        .countdown h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .time {
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .time.red {
+            color: red;
+        }
+        .fade-out {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            opacity: 0;
+            transition: opacity 2s;
+            z-index: 10;
+        }
+        .message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            opacity: 0;
+            z-index: 20;
+            transition: opacity 2s, transform 2s;
+        }
